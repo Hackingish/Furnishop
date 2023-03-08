@@ -17,7 +17,7 @@ class TopCategories extends StatelessWidget {
       child: ListView.builder(
         itemCount: GlobalVariables.categoryImages.length,
         scrollDirection: Axis.horizontal,
-        itemExtent: 75,
+        itemExtent: 82,
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () => navigateToCategoryPage(
@@ -33,15 +33,15 @@ class TopCategories extends StatelessWidget {
                     child: Image.asset(
                       GlobalVariables.categoryImages[index]['image']!,
                       fit: BoxFit.cover,
-                      height: 40,
-                      width: 40,
+                      height: 45,
+                      width: 45,
                     ),
                   ),
                 ),
                 Text(
                   GlobalVariables.categoryImages[index]['title']!,
                   style: const TextStyle(
-                    fontSize: 12,
+                    fontSize: 13,
                     fontWeight: FontWeight.w400,
                   ),
                 ),
